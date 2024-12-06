@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Encabezado principal -->
+        <header>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="index.html">Productos</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Blog</a>
+            </nav>
+
+            <nav>
+                <div>
+                    <a href="index.html">PetShop</a>
+
+                    <form action="" method="POST">
+                        <input placeholder="Buscar" name="textoIngresado">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+
+                <a href="inicio-sesion.html">Login</a>
+
+                <form action="/salir" method="post">
+                    <button type="submit">Salir</button>
+                </form>
+
+            </nav>
+
+            <nav>
+                <a href="">Perro</a>
+                <a href="">Gato</a>
+                <a href="">Conejo</a>
+                <a href="">Promociones</a>
+                <a href="carrito.html">Carrito</a>
+                <a href="">Mi Cuenta</a>
+            </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <main>
+            <h3>Carrito de compras</h3>
+
+            <h4>Total: S/. 159.00 </h4>
+            
+                <form action="finalizar-pedido.html" method="">
+                    <button type="submit">Confirmar pedido</button>
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Imagen</th>
+                            <th>Color</th>
+                            <th>Categoria</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario</th>
+                            <th>Subtotal</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                            <tr>
+                                <td> Alfombra Cognitiva Estrella </td>
+                                <td>
+                                    
+                                    <figure>
+                                        <img src="https://www.cochikis.pe/wp-content/uploads/2022/07/alfombracognitiva1.jpg" alt="alfombra cognitiva">
+                                        <figcaption >Alfombra Cognitiva Estrella</figcaption>
+                                    </figure>
+                                </td>
+                                <td>Rojo</td>
+                                <td>Perro</td>
+                                <td>
+                                    <!-- Actualizar cantidad -->
+                                    <form action="" method="">
+                                        <input type="number" name="cantidad" value="1" min="1">
+                                        <button type="submit">Actualizar</button>
+                                    </form>
+                                </td>
+                                <td>S/. 129.00 </td>
+                                <td>S/. 129.00 </td>
+                                <td>
+                                    <!-- eliminar producto -->
+                                    <form action="" method="">
+                                        <button type="submit">Eliminar</button>
+                                    </form>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> Accecan Collar Michi Flores Mini </td>
+                                <td>
+                                    <img src="https://www.cochikis.pe/wp-content/uploads/2023/04/accecan-collar-corbatita-michi-miniflores.jpg" alt="collar">
+                                </td>
+                                <td>Celeste</td>
+                                <td>Gato</td>
+                                <td>
+                                    <!-- Actualizar cantidad -->
+                                    <form action="" method="">
+                                        <input type="number" name="cantidad" value="1" min="1">
+                                        <button type="submit">Actualizar</button>
+                                    </form>
+                                </td>
+                                <td>S/. 15.00 </td>
+                                <td>S/. 30.00</td>
+                            
+                                <td>
+                                    <!-- eliminar producto -->
+                                    <form action="" method="">
+                                        <button type="submit">Eliminar</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+
+            
+            <a href="index.html">Seguir comprando</a>
+                
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>Av. Brasil 210, Breña</p>
+            <p>Teléfono: 920 000 965</p>
+            <p>Correo: ventas@petshop.pe</p>
+            <p>Horario de atención: Lunes a Sábado de 9:00 am a 7:30 pm</p>
+        </footer>
+
+    </body>
+</html>
