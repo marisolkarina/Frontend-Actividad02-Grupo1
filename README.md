@@ -1,6 +1,6 @@
-# Frontend-Actividad02-Grupo1
-Ecommerce de venta de ropa y accesorios para mascotas.
+# Ecommerce de venta de ropa y accesorios para mascotas.
 
+# Grupo 1
 Integrantes:
 
 Pachauri Rivera, Marisol Karina
