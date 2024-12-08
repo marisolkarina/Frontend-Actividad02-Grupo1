@@ -300,6 +300,25 @@
     }
 }
 
+/*paginacion del index*/
+.pagination ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 40px 0;
+}
+.pagination li {
+    border: 2px var(--gray) solid;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.pagination a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
 /*FOOTER*/
 .footer {
     background-color: var(--footer);
