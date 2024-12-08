@@ -348,3 +348,111 @@
         text-align: left;
     }
 }
+/* ---------------------------
+   Estilos para Inicio de Sesión
+--------------------------- */
+.login-section {
+    margin: 40px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.login-section input[type="email"],
+.login-section input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid var(--gray);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-section input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.login-section button {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-section button:hover {
+    background-color: var(--btn-hover);
+}
+
+.login-section a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.login-section a:hover {
+    text-decoration: underline;
+}
+
+/* Registro */
+.register-section {
+    margin: 40px auto;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-section h2 {
+    margin-bottom: 15px;
+    color: var(--black);
+}
+
+.register-section p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--black);
+}
+
+.register-section button {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-section button:hover {
+    background-color: var(--btn-hover);
+}
