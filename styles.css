@@ -8,7 +8,7 @@
     --primary: #D48166;
     --btn: #8bb09c;
     --btn-hover: #77af96;
-    --btn-confirmar-hover: #d46a66;
+    --btn-2-hover: #d46a66;
     --footer: #3E4059;
     --black: #000;
     --white: #fff;
@@ -537,7 +537,7 @@
 }
 
 .finalizar-pedido .confirmar-pedido button:hover {
-    background-color: var(--btn-confirmar-hover);
+    background-color: var(--btn-2-hover);
 }
 
 
