@@ -13,6 +13,7 @@
     --black: #000;
     --white: #fff;
     --gray: #ccc8c8;
+    --bg1: #f9f9f9
 }
 
 /* ---------------------------
@@ -549,7 +550,7 @@
     text-decoration: underline;
 }
 
-/* Registro */
+/* opción de registro en la página de inicio de sesión*/
 .register-section {
     margin: 40px auto;
     max-width: 400px;
@@ -679,5 +680,116 @@
     width: 100%;
 }
 
+/* ---------------------------
+   Estilos para REGISTRO
+--------------------------- */
+/* Estilos para la sección principal */
+.main-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: var(--bg1);
+}
+/* Estilos para el formulario de registro */
+.main-registro form {
+    width: 400px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* box-sizing: border-box; */
+}
+/* Encabezados */
+.main-registro form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+/* Campos de entrada */
+.main-registro form div {
+    margin-bottom: 15px;
+}
+.main-registro form label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.main-registro form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Indicador de contraseña */
+.main-registro form small {
+    color: #999;
+}
+#password-strength-bar {
+    height: 5px;
+    background-color: var(--btn);
+    margin-top: 5px;
+    border-radius: 4px;
+    overflow: hidden;
+}
 
+/* Botones */
+.main-registro form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--btn);
+    color: var(--white);
+    cursor: pointer;
+    margin-top: 10px;
+}
+.main-registro form button:hover {
+    background-color: var(--btn-hover);
+}
+/* opcion de iniciar sesión en el registro.html*/
+.main-registro form:nth-child(2) {
+    background-color: var(--white);
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 15px;
+}
 
+.main-registro form:nth-child(2) button {
+    background-color: var(--btn);
+    margin-top: 10px;
+}
+
+.main-registro form:nth-child(2) button:hover {
+    background-color: var(--btn-hover);
+}
+
+/* Texto */
+.main-registro form p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.main-registro form p a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.main-registro form p a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .main-registro {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
