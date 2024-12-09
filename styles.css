@@ -8,13 +8,16 @@
     --primary: #D48166;
     --btn: #8bb09c;
     --btn-hover: #77af96;
+    --btn-2-hover: #d46a66;
     --footer: #3E4059;
     --black: #000;
     --white: #fff;
     --gray: #ccc8c8;
 }
 
-/* index */
+/* ---------------------------
+   Estilos para INDEX
+--------------------------- */
 .grid-container-index {
     display: grid;
     grid-template-areas:
@@ -350,7 +353,9 @@
 }
 
 
-/* CARRITO */
+/* ---------------------------
+   Estilos para CARRITO
+--------------------------- */
 .grid-container-carrito {
     display: grid;
     grid-template-areas:
@@ -472,3 +477,207 @@
     }
 
 }
+/* ---------------------------
+   Estilos para Inicio de Sesión
+--------------------------- */
+.login-section {
+    margin: 40px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.login-section input[type="email"],
+.login-section input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid var(--gray);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-section input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.login-section button {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-section button:hover {
+    background-color: var(--btn-hover);
+}
+
+.login-section a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.login-section a:hover {
+    text-decoration: underline;
+}
+
+/* Registro */
+.register-section {
+    margin: 40px auto;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-section h2 {
+    margin-bottom: 15px;
+    color: var(--black);
+}
+
+.register-section p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--black);
+}
+
+.register-section button {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-section button:hover {
+    background-color: var(--btn-hover);
+}
+
+
+/* ---------------------------
+   Estilos para Finalizar Pedido
+--------------------------- */
+.finalizar-pedido section {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.finalizar-pedido h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.finalizar-pedido form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.finalizar-pedido label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 5px;
+}
+
+.finalizar-pedido input {
+    padding: 10px;
+    border: 2px solid var(--gray);
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.finalizar-pedido button {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    width: auto;
+}
+
+.finalizar-pedido button:hover {
+    background-color: var(--btn-hover);
+}
+
+.finalizar-pedido .confirmar-pedido {
+    border: none;
+    box-shadow: none;
+    margin-top: 20px;
+    padding: 10px;
+    background: none;
+}
+
+.finalizar-pedido .confirmar-pedido button {
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: auto;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.finalizar-pedido .confirmar-pedido button:hover {
+    background-color: var(--btn-2-hover);
+}
+
+
+.finalizar-pedido .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.finalizar-pedido .form-group input {
+    width: 100%;
+}
+
+
+
