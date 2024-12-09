@@ -481,6 +481,12 @@
 /* ---------------------------
    Estilos para Inicio de Sesión
 --------------------------- */
+.main-login {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg1);
+}
+
 .login-section {
     margin: 40px auto;
     max-width: 400px;
@@ -488,6 +494,7 @@
     background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .login-section h2 {
@@ -504,8 +511,9 @@
 .login-section label {
     margin-bottom: 8px;
     font-size: 16px;
-    color: var(--black);
     font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .login-section input[type="email"],
@@ -513,7 +521,7 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 2px solid var(--gray);
+    border: 1px solid var(--gray);
     border-radius: 5px;
     font-size: 16px;
 }
@@ -531,6 +539,8 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .login-section button:hover {
@@ -567,7 +577,7 @@
 }
 
 .register-section p {
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 15px;
     color: var(--black);
 }
@@ -581,16 +591,30 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 14px;
 }
 
 .register-section button:hover {
     background-color: var(--btn-hover);
 }
 
+@media (min-width: 768px) {
+    .main-login{
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+    .main-login section {
+        width: 50%
+    }
+}
 
 /* ---------------------------
    Estilos para Finalizar Pedido
 --------------------------- */
+
+.main-pedido { padding: 10px; }
+.main-pedido div div section:first-child { line-height: 30px; }
 .finalizar-pedido section {
     width: 100%;
     max-width: 600px;
@@ -615,14 +639,13 @@
 
 .finalizar-pedido label {
     font-size: 16px;
-    font-weight: 600;
     color: var(--black);
-    margin-bottom: 5px;
+    line-height: 30px;
 }
 
 .finalizar-pedido input {
     padding: 10px;
-    border: 2px solid var(--gray);
+    border: 1px solid var(--gray);
     border-radius: 5px;
     font-size: 16px;
     width: 100%;
@@ -639,6 +662,7 @@
     transition: background-color 0.3s ease;
     max-width: 200px;
     width: auto;
+    font-size: 14px;
 }
 
 .finalizar-pedido button:hover {
@@ -663,6 +687,7 @@
     width: auto;
     display: inline-block;
     margin-top: 20px;
+    font-size: 14px;
 }
 
 .finalizar-pedido .confirmar-pedido button:hover {
@@ -698,7 +723,6 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    /* box-sizing: border-box; */
 }
 /* Encabezados */
 .main-registro form h2 {
@@ -746,6 +770,7 @@
     color: var(--white);
     cursor: pointer;
     margin-top: 10px;
+    font-size: 14px;
 }
 .main-registro form button:hover {
     background-color: var(--btn-hover);
@@ -763,6 +788,7 @@
 .main-registro form:nth-child(2) button {
     background-color: var(--btn);
     margin-top: 10px;
+    font-size: 14px;
 }
 
 .main-registro form:nth-child(2) button:hover {
