@@ -8,6 +8,7 @@
     --primary: #D48166;
     --btn: #8bb09c;
     --btn-hover: #77af96;
+    --btn-confirmar-hover: #d46a66;
     --footer: #3E4059;
     --black: #000;
     --white: #fff;
@@ -456,3 +457,99 @@
 .register-section button:hover {
     background-color: var(--btn-hover);
 }
+
+
+/* ---------------------------
+   Estilos para Finalizar Pedido
+--------------------------- */
+.finalizar-pedido section {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.finalizar-pedido h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.finalizar-pedido form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.finalizar-pedido label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 5px;
+}
+
+.finalizar-pedido input {
+    padding: 10px;
+    border: 2px solid var(--gray);
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.finalizar-pedido button {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+    width: auto;
+}
+
+.finalizar-pedido button:hover {
+    background-color: var(--btn-hover);
+}
+
+.finalizar-pedido .confirmar-pedido {
+    border: none;
+    box-shadow: none;
+    margin-top: 20px;
+    padding: 10px;
+    background: none;
+}
+
+.finalizar-pedido .confirmar-pedido button {
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: auto;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.finalizar-pedido .confirmar-pedido button:hover {
+    background-color: var(--btn-confirmar-hover);
+}
+
+
+.finalizar-pedido .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.finalizar-pedido .form-group input {
+    width: 100%;
+}
+
+
+
